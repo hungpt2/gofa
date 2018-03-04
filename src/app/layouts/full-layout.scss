@@ -1,0 +1,25 @@
+.navbar-brand {
+    background: url(../../assets/img/gofa/logo.png) !important;
+    background-size: 70px auto !important;
+    background-color: #fff !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    border-bottom: 0px solid #c2cfd6 !important;
+}
+#icon-coin {
+    float: left;
+    margin: 10px 5px 0 0;
+    width: 15px;
+    height: 15px;
+    background: url(../../assets/img/gofa/gold_coin.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.coin-profile {
+    float: left;
+    line-height: 35px;
+    display: inline;
+}
+.float-center {
+    text-align: center;
+}

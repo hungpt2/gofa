@@ -1,0 +1,49 @@
+<div>
+    <div class="container-panel">
+        <div class="napthelogin-panel-button">
+            <a href="#/dang-nhap">
+                <div class="login-button"></div>
+            </a>
+            <div class="show-video" (click)="openModal=!openModal"></div>
+        </div>
+        <div class="logo-panel" (click)="router.navigate(['/gofa'])"></div>
+        <div class="container-napthe-withoutLogin" style="width: 100%;">
+            <div class="content-napthe" style="width: 100%;">
+                <div class="loaithe-panel">
+                    <div (click)="typeCard='viettel'" [ngClass]="typeCard!='viettel'?'the-viettel':'the-viettel-active'"></div>
+                    <div (click)="typeCard='vina'" [ngClass]="typeCard!='vina'?'the-vina':'the-vina-active'" style="background-size: 70px 17px;"></div>
+                    <div (click)="typeCard='mobi'" [ngClass]="typeCard!='mobi'?'the-mobi':'the-mobi-active'" style="background-size: 70px 17px;"></div>
+                </div>
+                <form class="input-panel">
+                    <input type="text" value="" placeholder="Tên nhân vật">
+                    <input type="text" placeholder="Mã thẻ">
+                    <input type="text" placeholder="Serial">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAcCAIAAAB56a/tAAAELElEQVR42u2Y7StzYRzHt+6kaEneSZL/QFLyQtLkKXlqGmWULKwlL8QbkqKJEkJSXlDSykMtshSFF57KC9puiRvzRolwozVz7u927b7O5Zyzh3ab7rJfa539znX9fvtc5/o9XEfGfTORhYG/N/D19fXc3JxGo0lOTmb1Dw8Pk5OTtbW1ubm5SqWyoqKiv7//7OxMOH9nh1OrOYWCi4hwfeN6b8/vf1pbW5P9FfFdu91uNBpbWlry8vLguqCgoKOjQ8J14MAspIwROuD4+LikpCRLSmZmZnhDBgOHWeIP9N7l5OQkMzPTG7DNZqusrBT7xbrjVpDAMi9C7t7e3hYXFxM3arX6/PwcyoODg6KiIqI0mUyucUajBw/PdnnZpYEe10SJu1Jyd3eXnp6OFZcEdjgchHZ4eBhjiGZpaSk7OxvKqampIIFjYmLKy8tHRkYODw/FwGNjY3Rd19fX6ayFhQWixB5z/Y6P97Dp9bxprdajTEjgnE6BX6fTmZ+fv729zS46O2BlZQX2e3t7BRN7enqgn5iY+IQYFgNXV1dTYCwwG9VUbxsa4jfw4iJvbn6e1+P6ozQ2Nk5PTwv8sgMMBgOM45EKJnZ3d0OPXRYSYOQJCiYYTPU/09J4MKuVDVBer9Gwc8fHx1tbW8V+2TFkcyFTIm+xUZ2Tk9PU1PQ5WVoMDOsU7P39nQ0wqv8VF8eDMbuAe33l9SkpVI3QKCwslPQryKbIzLCv1+uRSkiGQ/QhsMnPkADrdDoKxu4is9lM9a8/fvBgIoueT3Q0UZyeniItPz09+QVmsyMyRWdnJ9IVatL9/f2n1WEx8OrqKgWrqakh2RL/gy1UTrncPzAytjstZ2RkXF1defMr0GNZVSoVDSvU/wCrUfDAEOTJLJ/iCAQ4MhK/sJNJWvYL/Pz83N7eDuNdXV03Nze7u7soiqQCb25uhhbYXVNN9fX1SrfgOQ8ODlqtVgpsp/XWB7BC0dzcLAtMkCAaGhpgeZmUdLe8vLwAXhxcIQEWy+PjIwW+SUriwZCoJJNWaqosYEEbC7Ozs7Niv+Sx69lq/zXAGxsbFPi3SiVdlnDNlKUAaeVyOXY+qgNbFKgcHR3BoyDJfwUwqiihRePJWSxBNB7eYpgEC5Kz5Eg09riLs8SXArOp2xVmaBsTEyVaS53OR2vpDdhisRDL4iPR29sb2dKeBj5EwFjOra0t0ldeXl6Ojo5SWr7RZQ8PZrNLg4VAZvZ5eKBNNXWKa+zksrIyGEflw8qSNgvfaFfq6uqgb2tr+6cs7TeovFUjpBbuY+8bxPEQhCChvnANzf7+PsqPpFMUCLalDwlwVFQUzmJarRY1CbkEZQnntYuLCwnzqLGlpZ4XALGxXFWV3xcA3k6m2Ep9fX3oNEgtxBlmYGAg8HN/+BVPGDgMHAYOA4eB/0f5A55BBx30EgMsAAAAAElFTkSuQmCC">
+                    <input type="text" class="input-captcha" placeholder="Nhập captcha">
+                    <div class="button-napthe"></div>
+                </form>
+            </div>
+            <div class="popup-manager" [hidden]="openModal">
+                <div class="popup-holder">
+                    <div (click)="openModal=!openModal" class="popup-modal" style="background-color: rgba(0, 0, 0, 0.5); position: fixed; left: 0px; top: 0px; bottom: 0px; right: 0px;"></div>
+                    <div class="popup" style="left: 0px; top: 0px; zoom: 1;">
+                        <div class="popup-header">
+                            <div class="popup-title"></div>
+                            <div class="popup-close-button profile-popup-close-btn"></div>
+                        </div>
+                        <div class="popup-content">
+                            <div class="video-panel-popup">
+                                <span>
+                                    <iframe frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player"
+                                        width="100%" height="100%" src="https://www.youtube.com/embed/LTv-_cI4SrM?autoplay=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fnv247.net&amp;widgetid=19"
+                                        id="widget20"></iframe>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-manager"></div>
+</div>

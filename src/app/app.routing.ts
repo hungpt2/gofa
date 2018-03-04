@@ -7,7 +7,7 @@ import { FullLayoutComponent } from './layouts/full-layout.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'main',
+    redirectTo: 'gofa',
     pathMatch: 'full',
   },
   {
@@ -19,7 +19,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'nap-the',
-        loadChildren: './dashboard/dashboard.module#DashboardModule'
+        loadChildren: './napthe/napthe.module#NaptheModule'
       },
     ]
   },
@@ -29,7 +29,11 @@ export const routes: Routes = [
   },
   {
     path: 'nap-the-nhanh',
-    loadChildren: './main/main.module#MainModule'
+    loadChildren: './napthenhanh/napthenhanh.module#NaptheNhanhModule'
+  },
+  {
+    path: 'dang-nhap',
+    loadChildren: './login/login.module#LoginModule'
   }
 ];
 

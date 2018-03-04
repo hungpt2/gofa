@@ -1,0 +1,187 @@
+.container-panel {
+    width: 100%;
+    position: relative;
+}
+.container-panel .napthelogin-panel-button {
+    width: 100%;
+    height: 37px;
+    position: relative;
+    top: 0;
+}
+.container-panel .logo-panel {
+    width: 176px;
+    height: 145px;
+    background: url(../../assets/img/gofa/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.container-panel .container-napthe-withoutLogin {
+    width: 100%!important;
+    position: absolute;
+    height: fit-content;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.container-panel .napthelogin-panel-button .show-video {
+    width: 40px;
+    height: 40px;
+    background: url(../../assets/img/gofa/youtube.png) 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 4%;
+    top: 15px;
+    cursor: pointer;
+}
+.container-panel .napthelogin-panel-button .login-button {
+    width: 132px;
+    height: 37px;
+    background: url(../../assets/img/gofa/login_btn2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 4%;
+    top: 15px;
+    cursor: pointer;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe {
+    width: 45%;
+    box-sizing: border-box;
+    padding: 0 5%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+.container-panel .video-wrapper {
+    width: 450px;
+    height: 250px;
+    margin-top: 30px;
+    padding: 0 5%;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .loaithe-panel {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    display: flex;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .input-panel {
+    position: relative;
+    margin-top: 30px;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .loaithe-panel div {
+    width: 32%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .loaithe-panel .the-mobi-active {
+    background: #fff url(../../assets/img/gofa/mobifone.png) 50% no-repeat;
+    border: 1px solid #ebebeb;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .loaithe-panel .the-vina-active {
+    background: #fff url(../../assets/img/gofa/vina.png) 50% no-repeat;
+    border: 1px solid #ebebeb;
+    background-position: 23px 8px;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .loaithe-panel .the-viettel-active {
+    border: 1px solid #ebebeb;
+    background: #fff url(../../assets/img/gofa/Vietel.png) 50% no-repeat;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .loaithe-panel .the-viettel {
+    background-image: url(../../assets/img/gofa/Vietel.png);
+    border: 1px solid #721a1d;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .loaithe-panel .the-vina {
+    background-image: url(../../assets/img/gofa/vina.png);
+    border: 1px solid #721a1d;
+    background-position: 23px 8px;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .loaithe-panel .the-mobi {
+    background-image: url(../../assets/img/gofa/mobifone.png);
+    border: 1px solid #721a1d;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .input-panel input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    width: 280px;
+    height: 30px;
+    margin: 0 auto 20px;
+    text-align: center;
+    background-image: url(../../assets/img/gofa/bg_input.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .input-panel img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    list-style: none;
+    width: 123px;
+    height: 35px;
+    margin: 0 auto;
+    display: block;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .input-panel .input-captcha {
+    margin-top: 10px;
+}
+.container-panel .container-napthe-withoutLogin .content-napthe .input-panel .button-napthe {
+    background-image: url(../../assets/img/gofa/napthe_btn.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 284px;
+    height: 49px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+.popup-manager {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+.popup-manager .popup-holder {
+    pointer-events: all;
+    margin: 150px auto;
+    width: fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+}
+.popup, .popup-content, .popup-header {
+    position: relative;
+}
+.popup {
+    margin: 20px;
+}

@@ -1,0 +1,87 @@
+.content-login-container {
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    float: left;
+}
+.content-login-container .login-container {
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin: 20px auto;
+    top: 50px;
+}
+.content-login-container .napthe {
+    width: 132px;
+    height: 37px;
+    background: url(../../assets/img/gofa/napthe_btn2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 4%;
+    top: 15px;
+    cursor: pointer;
+}
+.content-login-container .login-container .login-logo {
+    width: 176px;
+    height: 145px;
+    background: url(../../assets/img/gofa/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.content-login-container .login-container .login-input {
+    width: 300px;
+    height: auto;
+    position: relative;
+    margin: 10px auto;
+    padding: 0 44px;
+    box-sizing: border-box;
+}
+.content-login-container .login-container .login-input input:first-child, .content-login-container .login-container .login-input input:nth-child(2) {
+    background: url(../../assets/img/gofa/border_button.png) bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.content-login-container .login-container .login-input input {
+    width: 100%;
+    height: 30px;
+    margin: 10px auto;
+    border: none;
+    padding: 0 23px;
+    outline: none;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-family: Roboto,sans-serif;
+}
+.content-login-container .login-container .login-input button {
+    margin: 10px auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 44px;
+    cursor: pointer;
+    background: url(../../assets/img/gofa/button_login.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    outline: none;
+}
+.content-login-container .login-container .login-input .wrap-login-fb {
+    width: 40px;
+    position: relative;
+    display: block;
+    height: 39px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+}
+.content-login-container .login-container .login-input .login-with-fb-text {
+    position: relative;
+    text-align: center;
+    display: block;
+    color: #f19d94;
+    font-size: 15px;
+}

@@ -31,3 +31,19 @@
 
 // Custom styles
 @import "custom";
+
+body {
+    background: url(../assets/img/gofa/background.png);
+}
+.dropdown-toggle::after {
+    margin-top: 15px;
+}
+.container-fluid {
+    padding: 0px!important;
+}
+.breadcrumb {
+    margin-bottom: 0px;
+}
+.text-center {
+    text-align: center;
+}

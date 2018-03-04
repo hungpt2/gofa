@@ -1,0 +1,36 @@
+<div class="main-content-form">
+    <div class="container-napthe" style="width: 100%; margin-left: 0px;">
+        <div class="loaithe-panel-content" style="margin: 50px auto;">
+            <div (click)="typeCard='viettel'" [ngClass]="typeCard!='viettel'?'viettel':'viettel-active'"></div>
+            <div (click)="typeCard='mobi'" [ngClass]="typeCard!='mobi'?'mobi':'mobi-active'" style="background-size: 70px 17px;"></div>
+            <div (click)="typeCard='vina'" [ngClass]="typeCard!='vina'?'vina':'vina-active'" style="background-size: 70px 17px;"></div>
+        </div>
+        <div class="input-panel-content-frame" style="width: 100%;">
+            <div class="input-panel-content">
+                <input type="numberic" value="" placeholder="Nhập Serial">
+                <input type="numberic" value="" placeholder="Mã thẻ">
+                <button type="submit"></button>
+            </div>
+        </div>
+        <div class="table-tyle-frame" style="width: 100%;">
+            <div class="table-tyle">
+                <div class="table-content">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Mệnh giá</th>
+                                <th class="text-center">GOFA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of tilequydoi">
+                                <td>{{item.menhgia}}</td>
+                                <td>{{item.gofa}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
