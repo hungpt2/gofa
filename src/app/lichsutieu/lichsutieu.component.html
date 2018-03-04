@@ -1,0 +1,24 @@
+<div class="main-content-form" style="width: 100%; height: auto;">
+    <div class="container table-content">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">Thời gian</th>
+                    <th class="text-center">Loại</th>
+                    <th class="text-center">Mệnh giá</th>
+                    <th class="text-center">GOFA nhận</th>
+                    <th class="text-center">Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of lichSuTieu">
+                    <td class="text-center">{{item.time | date:'hh:mm:ss dd/MM/yyyy'}}</td>
+                    <td class="text-center">{{item.company}}</td>
+                    <td class="text-center">{{item.gofa}}</td>
+                    <td class="text-center">{{item.wallet}}</td>
+                    <td class="text-center">{{item.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

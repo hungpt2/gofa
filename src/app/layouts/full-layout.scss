@@ -4,7 +4,7 @@
     background-color: #fff !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    border-bottom: 0px solid #c2cfd6 !important;
+    // border-bottom: 0px solid #c2cfd6 !important;
 }
 #icon-coin {
     float: left;
@@ -22,4 +22,15 @@
 }
 .float-center {
     text-align: center;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+.breadcrumb {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    z-index: 1;
 }

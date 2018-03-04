@@ -7,7 +7,7 @@ import { FullLayoutComponent } from './layouts/full-layout.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'gofa',
+    redirectTo: 'chuyen-khoan',
     pathMatch: 'full',
   },
   {
@@ -21,6 +21,30 @@ export const routes: Routes = [
         path: 'nap-the',
         loadChildren: './napthe/napthe.module#NaptheModule'
       },
+      {
+        path: 'doi-thuong',
+        loadChildren: './nhanthuong/nhanthuong.module#NhanthuongModule'
+      },
+      {
+        path: 'chuyen-khoan',
+        loadChildren: './chuyenkhoan/chuyenkhoan.module#ChuyenkhoanModule'
+      },
+      {
+        path: 'lich-su-nap-tien',
+        loadChildren: './lichsunaptien/lichsunaptien.module#LichsuNaptienModule'
+      },
+      {
+        path: 'lich-su-tieu',
+        loadChildren: './lichsutieu/lichsutieu.module#LichsuTieuModule'
+      },
+      {
+        path: 'lich-su-nhan-thuong',
+        loadChildren: './lichsunhanthuong/lichsunhanthuong.module#LichsuNhanthuongModule'
+      },
+      {
+        path: 'gift-code',
+        loadChildren: './giftcode/giftcode.module#GiftCodeModule'
+      }
     ]
   },
   {

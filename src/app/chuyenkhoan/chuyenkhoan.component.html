@@ -1,0 +1,65 @@
+<div class="main-content-form" style="width: 100%; height: auto;">
+    <!-- react-empty: 2070 -->
+    <!-- react-empty: 2058 -->
+    <div class="container-chuyenkhoan" style="width: 100%;">
+        <div class="input-panel">
+            <div>
+                <input type="text" placeholder="Nhập tên hiển thị" value="">
+            </div>
+            <div>
+                <input type="text" placeholder="Nhập lại tên hiển thị" value="">
+                <div class="check-merchant"></div>
+            </div>
+            <div>
+                <input type="text" placeholder="Nhập số NOVA cần chuyển" value="">
+            </div>
+            <div>
+                <input type="text" placeholder="Nhập lý do chuyển" value="">
+            </div>
+            <div class="nhanduocgold">
+                <span style="float: left;">Nhận được:</span>
+                <span style="color: rgb(208, 120, 17); font-weight: bold;"></span>
+                <div></div>
+            </div>
+            <div class="phichuyenon">
+                <span style="float: left;">Phí chuyển:</span>
+                <span style="float: left; color: rgb(208, 120, 17); font-weight: bold;">0</span>
+                <div></div>
+            </div>
+            <a href="#/home/chuyenkhoanconfirm">
+                <div class="button-tieptuc"></div>
+            </a>
+        </div>
+    </div>
+    <div class="container-daily" style="width: 100%;">
+        <tabset>
+            <tab *ngFor="let agency of listAgency" style="overflow-x: auto;">
+                <template tabHeading>
+                    <a>{{agency.tabContent}}</a>
+                </template>
+                <table class="table table-bordered agency-table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Mã đại lý</th>
+                            <th class="text-center">Tên đại lý</th>
+                            <th class="text-center">SĐT</th>
+                            <th class="text-center">Địa chỉ</th>
+                            <th class="text-center"></th>
+                            <th class="text-center"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of agency.data">
+                            <td>{{item.code}}</td>
+                            <td>{{item.name}}</td>
+                            <td>{{item.number}}</td>
+                            <td>{{item.address}}</td>
+                            <td><i class="fa fa-facebook-official fa-lg" href="https://www.facebook.com/$item.fbUrl" target="_blank"></i></td>
+                            <td><div class="button-chuyenkhoan"></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </tab>
+        </tabset>
+    </div>
+</div>

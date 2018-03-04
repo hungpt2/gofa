@@ -1,0 +1,13 @@
+<div class="main-content-form" style="width: 100%; height: auto;">
+    <div class="container-doithuong-content" style="width: 100%;">
+        <div class="list-card" *ngFor="let item of listCard">
+            <div *ngFor="let child of item.child" class="block-card">
+                <div [ngClass]="child.url"></div>
+                <span>
+                    {{child.gofa}}
+                    {{child.unit}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+.container-doithuong-content .list-card {
+    // width: 600px;
+    // height: 62px;
+    position: relative;
+    justify-content: space-between;
+    // display: flex;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.main-content-form {
+    min-height: calc(100vh - 149.6px);
+    margin-bottom: 48px;
+    margin-top: 46px;
+    width: calc(100% - 200px);
+    height: 100%;
+    position: relative;
+    float: left;
+    background-color: #f3f3f3;
+}
+.container-doithuong-content .list-card div {
+    display: inline-block;
+    width: 120px;
+    height: 62px;
+    background-size: contain;
+    cursor: pointer;
+}
+.container-doithuong-content .list-card span {
+    font-size: 12px;
+    color: #222;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+}
+.block-card {
+    margin-left: 10px;
+}
+.vt50 {
+    background: url('../../assets/img/gofa/vt50.jpg');
+}
+.vt100 {
+    background: url('../../assets/img/gofa/vt100.jpg');
+}
+.vt200 {
+    background: url('../../assets/img/gofa/vt200.jpg');
+}
+.vt500 {
+    background: url('../../assets/img/gofa/vt500.jpg');
+}
+.mb50 {
+    background: url('../../assets/img/gofa/mb50.jpg');
+}
+.mb100 {
+    background: url('../../assets/img/gofa/mb100.jpg');
+}
+.mb200 {
+    background: url('../../assets/img/gofa/mb200.jpg');
+}
+.mb500 {
+    background: url('../../assets/img/gofa/mb500.jpg');
+}
+.vn50 {
+    background: url('../../assets/img/gofa/vn50.jpg');
+}
+.vn100 {
+    background: url('../../assets/img/gofa/vn100.jpg');
+}
+.vn200 {
+    background: url('../../assets/img/gofa/vn200.jpg');
+}
+.vn500 {
+    background: url('../../assets/img/gofa/vn500.jpg');
+}
