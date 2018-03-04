@@ -7,7 +7,7 @@ import { FullLayoutComponent } from './layouts/full-layout.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'chuyen-khoan',
+    redirectTo: 'gofa',
     pathMatch: 'full',
   },
   {
