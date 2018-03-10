@@ -1,0 +1,31 @@
+.popup-container-confirm-alert .text {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    padding: 3%;
+    text-align: center;
+    width: 320px;
+    border: 1px solid #db783a;
+    color: red;
+    overflow: hidden;
+}
+
+.popup-manager {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.popup-manager .popup-holder {
+    pointer-events: all;
+    margin: 150px auto;
+    width: -webkit-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+}

@@ -2,7 +2,7 @@
     <div class="container-doithuong-content" style="width: 100%;">
         <div class="list-card" *ngFor="let item of listCard">
             <div *ngFor="let child of item.child" class="block-card">
-                <div [ngClass]="child.url"></div>
+                <div [ngClass]="child.url" (click)="doithuong(child.gofa,item.typeCard)"></div>
                 <span>
                     {{child.gofa}}
                     {{child.unit}}

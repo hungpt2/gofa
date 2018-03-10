@@ -5,16 +5,17 @@
                 <span>Like và theo dõi Fanpage để nhận được nhiều code giá trị.</span>
             </div>
             <div>
-                <input type="text" value="" placeholder="Nạp Giftcode">
+                <input name="first" [(ngModel)]="giftcode" type="text" value="" placeholder="Nạp Giftcode">
             </div>
             <div class="captcha-panel">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAcCAIAAAB56a/tAAAEoElEQVR42u1YTUgbQRReKG2RIqXQShGRVpBSSilepIhICIpICFVCRIuIVQ+KFJUgiIiISBCC5BCC5JJDyaEIHkoOInooRQRrQYsWsaLEH0SkhEbRKmqm32Q2s7vZzSZNcinmsWAy8zLzvpn3vvetArlhJmQB32DAfj+xWEhuLrl9m+TkkJISMjxMgkHZj4UED7Xra/Lhg2Ihg4EMDZEfP6SFfD7R4e5d6vD8OWlvJ8vL8QJbWlqy2+0NDQ1VVVWVlZX19fVOp/Pg4CB1wAjy7VttDAUFZGsracD7++TVK+k7AN+6pTiPoyNSXk4/379PpqfpxvPzJD9fdOjriwns/Py8tbXV4/Fsb2+Hw2GMnJ2d+f1+s9lsMpm2eGT/CnhkRA9GTU1SgB8JR/R48Kmujnz+TMEw29wkExOkrIxcXJAXL0Rvh0PaHpd/7544Pj6uTDq/1+tVBzw3N2cwGHp6elIEzOJkz5cvdMTplEaQdxywnjU1UY+BgbgOo6PSouvriin8io0DeSjEhzs6OnZ2dtQrXV1dATAyPEXASD0eyeGhmOR8BNmXGDCuEdPPnult/vKltCi/f2YoYD6FdEhkSG8Arq6uThEwTzQ84CpgvryURrq6kgDMqkKZkHrnqmYRPmW1JoQBGgPgAZ1s0gcMWpVX4+PHZGxMIq1fv5IA/OYNnQYD6RgIme+xsaEKLTpVWJjwetva2oxG4ybSKuW2NDiowUPYWk6EbBC8i8jz8ojZTGn127fIHL5jDrSEIN6/J0VF9D5R/Wg53d3iKmA/vrTHo9j+5ESawuq65nA4cL3grbT68OkpMRo1+DkQiPUEqIUFyjKcWdFowndy6ScwKkCqTw6DHz/S++cjr18rFkXdypuZLlqLxbKyspKW8MAFFBeL2z14oAgV6mBmRnstdBPuLP0A7Wdqivz5I1Ym+pPJJE7hnFwuyROJADf4TE7SX6m7gtJCoZDNZoPkOD4+TktpQQvIOz9SUs5hLIDv37WX493rTMgRMeh0LEaqWKu5mZYAqw0IFZQTBB3fD9GobHFxEV13bW0tA9ISJMz3glJi6Y0Y5BoJl6RpkHfM4adQLNawTtPSKU78kG8G1alsuW632+fzMaWVAcCMbtTNAsovGR5hDpOCVaO7xvjpFOfXr9JmSPuoBYPB/v7+9RiVkiZg+U3KBby8NcYDzH3eCV7659MnvUxAqcQzTlrYCTUWsUAggPazz7Iug4DRODgwdBOcNQzag9Ude1j1qbNgdVUcvCNc/M55SqkvGq7COjupE96ZNFUHrLRUnIKAidje3l5tbe3s7GzmXw9jVIf6QQqwU5DXObPeXonMD51EpBy3WxKoYGZrJNufPJGabcyh8AjQGCOGV6LGxka8CaZWt4nbkt0eFy0aD96T5eWKmwerQXtyioYaA67Ydw75A429uystAVpiX0HO0HSsqLAua2YEVewyxLcmeKb/DwDwAnoK5D2KCAFAVOC48XrDdSVrKDYb9QH74Hn4kEYOyaTg5piuU1FBT4F7YBaJDdJHSsABq0DNtbRED0w0SAsdwC4Zq2X/xZMFnAWcBZwFnAX8P9lfrDE5LC2zlL8AAAAASUVORK5CYII=">
                 <div class="button-refresh-captcha"></div>
             </div>
             <div>
-                <input type="text" value="" placeholder="Nhập mã captcha">
+                <input name="first" [(ngModel)]="captcha" type="text" value="" placeholder="Nhập mã captcha">
             </div>
-            <div class="button-napgiftcode"></div>
+            <div class="button-napgiftcode" (click)="napthe()"></div>
         </form>
     </div>
 </div>
+<alert-validate [show]="validate" [message]="message" (close)="getResult($event)"></alert-validate>

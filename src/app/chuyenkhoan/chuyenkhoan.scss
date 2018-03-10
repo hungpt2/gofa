@@ -1,12 +1,11 @@
 .main-content-form {
-    min-height: calc(100vh - 149.6px);
-    margin-bottom: 48px;
-    margin-top: 46px;
+    min-height: calc(100vh - 100.8px);
     width: calc(100% - 200px);
     height: 100%;
     position: relative;
     float: left;
     background-color: #f3f3f3;
+    overflow-x: auto;
 }
 .container-chuyenkhoan {
     max-width: 400px;
@@ -25,7 +24,8 @@
     box-sizing: border-box;
     padding-top: 26px;
     width: calc(100% - 400px)!important;
-    min-width: 375px;
+    min-width: 440px;
+    padding-bottom: 20px;
 }
 .container-chuyenkhoan .input-panel {
     // width: 80%;

@@ -5,8 +5,13 @@ import { CommonModule } from '@angular/common';
 import { NaptheComponent } from './napthe.component';
 import { NaptheRoutingModule } from './napthe-routing.module';
 
+import { FormsModule } from '@angular/forms';
+import { AlertModule } from '../common/alert.module';
+
 @NgModule({
   imports: [
+    AlertModule,
+    FormsModule,
     CommonModule,
     NaptheRoutingModule,
     ChartsModule

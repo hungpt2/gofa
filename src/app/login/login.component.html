@@ -6,12 +6,13 @@
         <div class="login-container" style="width: 100%;">
             <div class="login-logo"></div>
             <form class="login-input">
-                <input type="text" placeholder="Tài khoản" value="">
-                <input type="password" placeholder="Mật khẩu" value="">
-                <button type="submit"></button>
+                <input type="text" placeholder="Tài khoản" value="" [(ngModel)]="username" name="first">
+                <input type="password" placeholder="Mật khẩu" value="" [(ngModel)]="password" name="first">
+                <button (click)="checkForm()"></button>
                 <iframe class="wrap-login-fb" src="https://nova.club/fb/nv247-new/"></iframe>
                 <span class="login-with-fb-text">Đăng nhập qua Facebook</span>
             </form>
         </div>
     </div>
 </div>
+<alert-validate [show]="validate" [message]="message" (close)="getResult($event)"></alert-validate>

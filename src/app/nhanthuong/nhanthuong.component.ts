@@ -12,4 +12,7 @@ export class NhanthuongComponent {
   listCard = card;
   constructor( ) { }
 
+  doithuong(count, company) {
+    alert(count + company);
+  }
 }

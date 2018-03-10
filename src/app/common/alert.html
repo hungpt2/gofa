@@ -1,0 +1,16 @@
+<div class="popup-manager" [hidden]="show">
+    <div class="popup-holder">
+        <div (click)="closeAlert()" class="popup-modal" style="background-color: rgba(0, 0, 0, 0.5); position: fixed; left: 0px; top: 0px; bottom: 0px; right: 0px;z-index: -1;"></div>
+        <div class="popup alert-popup" style="left: 0px; top: 0px; zoom: 1;">
+            <div class="popup-header">
+                <div class="popup-title"></div>
+                <div class="popup-close-button profile-popup-close-btn"></div>
+            </div>
+            <div class="popup-content">
+                <div class="popup-container-confirm-alert">
+                    <div class="text" style="word-wrap: break-word;">{{message}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

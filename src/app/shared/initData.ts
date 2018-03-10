@@ -1,3 +1,5 @@
+export const tilechuyentien = 20;
+
 export const conversionRate = [
     {
         menhgia: 10000,

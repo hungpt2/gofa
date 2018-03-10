@@ -7,9 +7,9 @@
         </div>
         <div class="input-panel-content-frame" style="width: 100%;">
             <div class="input-panel-content">
-                <input type="numberic" value="" placeholder="Nhập Serial">
-                <input type="numberic" value="" placeholder="Mã thẻ">
-                <button type="submit"></button>
+                <input type="numberic" value="" placeholder="Nhập Serial" [(ngModel)]="serialCard">
+                <input type="numberic" value="" placeholder="Mã thẻ" [(ngModel)]="pinCard">
+                <button type="submit" (click)="checkForm()"></button>
             </div>
         </div>
         <div class="table-tyle-frame" style="width: 100%;">
@@ -34,3 +34,4 @@
         </div>
     </div>
 </div>
+<alert-validate [show]="validate" [message]="message" (close)="getResult($event)"></alert-validate>
